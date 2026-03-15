@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radzik Logistics - VTC Euro Truck Simulator 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">🚛 Radzik Logistics</div>
+            <nav class="nav">
+                <a href="#start" onclick="pokazSekcje('start')">Start</a>
+                <a href="#onas" onclick="pokazSekcje('onas')">O nas</a>
+                <a href="#flota" onclick="pokazSekcje('flota')">Flota</a>
+                <a href="#rekrutacja" onclick="pokazSekcje('rekrutacja')">Rekrutacja</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Start Section -->
+    <section id="start" class="section hero active" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_TLA.jpg');">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Radzik Logistics</h1>
+                    <p class="tagline">Jedziemy dalej niż inni.</p>
+                    <p class="subtitle">Wirtualna firma transportowa w Euro Truck Simulator 2</p>
+                    <p class="description">Dołącz do naszej społeczności graczy ETS2 i razem rozwijajmy najlepszą firmę transportową na serwerach!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O nas Section -->
+    <section id="onas" class="section about">
+        <div class="container">
+            <h2>O nas</h2>
+            <div class="about-content">
+                <p>Radzik Logistics to wirtualna firma transportowa skupiająca fanów symulacji transportu. Naszym celem jest realistyczna jazda, dobra atmosfera oraz wspólne rozwijanie firmy w świecie <strong>Euro Truck Simulator 2</strong>.</p>
+                <p>Jesteśmy społecznością pasjonatów ETS2, którzy wierzą w profesjonalizm, współpracę i wspólną zabawę. Każdy członek Radzik Logistics ma możliwość udziału w konwojach, eventach oraz rosnących operacjach transportowych.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flota Section -->
+    <section id="flota" class="section flota">
+        <div class="container">
+            <h2>Nasza Flota</h2>
+            
+            <div class="marki">
+                <div class="marka" onclick="pokazMarki('scania')">
+                    <div class="marka-icon">🚛</div>
+                    <div class="marka-name">SCANIA</div>
+                </div>
+                <div class="marka" onclick="pokazMarki('man')">
+                    <div class="marka-icon">🚛</div>
+                    <div class="marka-name">MAN</div>
+                </div>
+                <div class="marka" onclick="pokazMarki('volvo')">
+                    <div class="marka-icon">🚛</div>
+                    <div class="marka-name">VOLVO</div>
+                </div>
+                <div class="marka" onclick="pokazMarki('renault')">
+                    <div class="marka-icon">🚛</div>
+                    <div class="marka-name">RENAULT</div>
+                </div>
+                <div class="marka" onclick="pokazMarki('daf')">
+                    <div class="marka-icon">🚛</div>
+                    <div class="marka-name">DAF</div>
+                </div>
+                <div class="marka" onclick="pokazMarki('mercedes')">
+                    <div class="marka-icon">🚛</div>
+                    <div class="marka-name">MERCEDES</div>
+                </div>
+            </div>
+
+            <!-- Scania -->
+            <div id="scania" class="ciezarowki" style="display: none;">
+                <h3>Scania</h3>
+                
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_SCANIA_1.jpg');">
+                        [Zdjęcie Scania 1]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Scania R NextGen</h4>
+                        <p><strong>Moc:</strong> 500 KM</p>
+                        <p><strong>Kabina:</strong> Normal Roof</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Szary</p>
+                    </div>
+                </div>
+
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_SCANIA_2.jpg');">
+                        [Zdjęcie Scania 2]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Scania R NextGen</h4>
+                        <p><strong>Moc:</strong> 500 KM</p>
+                        <p><strong>Kabina:</strong> Normal Roof</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Czerwony</p>
+                    </div>
+                </div>
+
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_SCANIA_3.jpg');">
+                        [Zdjęcie Scania S500]
+                    </div>
+                    <div class="truck-info"> 
+                        <h4>Scania S NextGen</h4>
+                        <p><strong>Moc:</strong> 640 KM</p>
+                        <p><strong>Kabina:</strong> High Roof</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Biały</p>
+                    </div>
+                </div>
+
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_SCANIA_4.jpg');">
+                        [Zdjęcie Scania S500]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Scania S NextGen</h4>
+                        <p><strong>Moc:</strong> 640 KM</p>
+                        <p><strong>Kabina:</strong> High Roof</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Granatowy</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAN -->
+            <div id="man" class="ciezarowki" style="display: none;">
+                <h3>MAN</h3>
+                
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_MAN_1.jpg');">
+                        [Zdjęcie MAN TGX]
+                    </div>
+                    <div class="truck-info">
+                        <h4>MAN TGX</h4>
+                        <p><strong>Moc:</strong> 480 KM</p>
+                        <p><strong>Kabina:</strong> XLX</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Biały</p>
+                    </div>
+                </div>
+
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_MAN_2.jpg');">
+                        [Zdjęcie MAN TGX 2]
+                    </div>
+                    <div class="truck-info">
+                        <h4>MAN TGX</h4>
+                        <p><strong>Moc:</strong> 480 KM</p>
+                        <p><strong>Kabina:</strong> XLX</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Czarny</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Volvo -->
+            <div id="volvo" class="ciezarowki" style="display: none;">
+                <h3>Volvo</h3>
+                
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_VOLVO_1.jpg');">
+                        [Zdjęcie Volvo FH5]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Volvo FH5</h4>
+                        <p><strong>Moc:</strong> 550 KM</p>
+                        <p><strong>Kabina:</strong> Globetrotter</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Szary</p>
+                    </div>
+                </div>
+
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_VOLVO_2.jpg');">
+                        [Zdjęcie Volvo FH5 2]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Volvo FH5</h4>
+                        <p><strong>Moc:</strong> 550 KM</p>
+                        <p><strong>Kabina:</strong> Globetrotter</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Biały</p>
+                    </div>
+                </div>
+
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_VOLVO_3.jpg');">
+                        [Zdjęcie Volvo FH6]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Volvo FH6</h4>
+                        <p><strong>Moc:</strong> 550 KM</p>
+                        <p><strong>Kabina:</strong> Globetrotter XL</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Biały</p>
+                    </div>
+                </div>
+
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_VOLVO_4.jpg');">
+                        [Zdjęcie Volvo FH6 2]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Volvo FH6</h4>
+                        <p><strong>Moc:</strong> 550 KM</p>
+                        <p><strong>Kabina:</strong> Globetrotter XL</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Czarny</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Renault -->
+            <div id="renault" class="ciezarowki" style="display: none;">
+                <h3>Renault</h3>
+                
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_RENAULT_1.jpg');">
+                        [Zdjęcie Renault T]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Renault T</h4>
+                        <p><strong>Moc:</strong> 520 KM</p>
+                        <p><strong>Kabina:</strong> High Sleeper</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Biały</p>
+                    </div>
+                </div>
+
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_RENAULT_2.jpg');">
+                        [Zdjęcie Renault T 2]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Renault T</h4>
+                        <p><strong>Moc:</strong> 520 KM</p>
+                        <p><strong>Kabina:</strong> High Sleeper</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Czarny</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DAF -->
+            <div id="daf" class="ciezarowki" style="display: none;">
+                <h3>DAF</h3>
+                
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_DAF_1.jpg');">
+                        [Zdjęcie DAF NGD]
+                    </div>
+                    <div class="truck-info">
+                        <h4>DAF NGD</h4>
+                        <p><strong>Moc:</strong> 530 KM</p>
+                        <p><strong>Kabina:</strong> XG+</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Biały</p>
+                    </div>
+                </div>
+
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_DAF_2.jpg');">
+                        [Zdjęcie DAF NGD 2]
+                    </div>
+                    <div class="truck-info">
+                        <h4>DAF NGD</h4>
+                        <p><strong>Moc:</strong> 530 KM</p>
+                        <p><strong>Kabina:</strong> XG+</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Niebieski</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mercedes -->
+            <div id="mercedes" class="ciezarowki" style="display: none;">
+                <h3>Mercedes</h3>
+                
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_MERCEDES_1.jpg');">
+                        [Zdjęcie Mercedes Actros]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Mercedes Actros MP4</h4>
+                        <p><strong>Moc:</strong> 517 KM</p>
+                        <p><strong>Kabina:</strong> Giga Space</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Biały</p>
+                    </div>
+                </div>
+
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_MERCEDES_2.jpg');">
+                        [Zdjęcie Mercedes Actros 2]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Mercedes Actros MP4</h4>
+                        <p><strong>Moc:</strong> 517 KM</p>
+                        <p><strong>Kabina:</strong> Giga Space</p>
+                        <p><strong>Podwozie:</strong> 4x2</p>
+                        <p><strong>Kolor:</strong> Czerwony</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Naczepy -->
+            <div class="naczepy">
+                <h3>Naczepy</h3>
+                
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_NACZEPA_1.jpg');">
+                        [Zdjęcie naczepy]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Krone Cool Liner</h4>
+                        <p><strong>Typ:</strong> Chłodnia</p>
+                    </div>
+                </div>
+
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_NACZEPA_2.jpg');">
+                        [Zdjęcie naczepy]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Krone Profi Liner</h4>
+                        <p><strong>Typ:</strong> Firanka</p>
+                    </div>
+                </div>
+
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_NACZEPA_3.jpg');">
+                        [Zdjęcie naczepy]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Krone Profi Liner</h4>
+                        <p><strong>Typ:</strong> Firanka</p>
+                    </div>
+                </div>
+
+                <div class="truck">
+                    <div class="truck-image" style="background-image: url('TUTAJ_DODAJ_ZDJECIE_NACZEPA_4.jpg');">
+                        [Zdjęcie naczepy]
+                    </div>
+                    <div class="truck-info">
+                        <h4>Schmitz Cargobull</h4>
+                        <p><strong>Typ:</strong> Chłodnia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rekrutacja Section -->
+    <section id="rekrutacja" class="section recruitment">
+        <div class="container">
+            <h2>Dołącz do Radzik Logistics</h2>
+            
+            <div class="recruitment-content">
+                <div class="requirements">
+                    <h3>Wymagania:</h3>
+                    <ul>
+                        <li>✓ Minimalny wiek: 14 lat</li>
+                        <li>✓ Mikrofon na Discord</li>
+                        <li>✓ Aktywność w Euro Truck Simulator 2</li>
+                        <li>✓ Chęć wspólnej jazdy i współpracy</li>
+                        <li>✓ Pozytywne nastawienie do zespołu</li>
+                    </ul>
+                </div>
+                <div class="recruitment-action">
+                    <p>Zainteresowany? Dołącz do naszego Discord i porozmawia z nami!</p>
+                    <a href="https://discord.gg/duECQArytm" target="_blank" class="cta-button">Dołącz do Radzik Logistics</a>
+                </div>
+            </div>
+
+            <div class="social-section">
+                <h3>Śledź nas:</h3>
+                <div class="social-links">
+                    <a href="https://discord.gg/duECQArytm" target="_blank" class="social-link">Discord</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Radzik Logistics - VTC Euro Truck Simulator 2. Wszystkie prawa zastrzeżone.</p>
+            <p style="font-size: 0.9rem; opacity: 0.8;">Jedziemy dalej niż inni.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
